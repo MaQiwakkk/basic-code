@@ -16,7 +16,7 @@ public class LoginJframe extends JFrame implements MouseListener {
     static {
         list.add(new User("zhangsan", "123456"));
         list.add(new User("lisi", "1234"));
-        list.add(new User("石佳段彤小屁屁", "111"));
+        list.add(new User("石佳段彤", "111111"));
     }
 
     //成员位置添加登录、注册按钮
