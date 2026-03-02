@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello W你orld");
+        System.out.println("Hello World啊");
         Scanner sc = new Scanner(System.in);
     }
 }
