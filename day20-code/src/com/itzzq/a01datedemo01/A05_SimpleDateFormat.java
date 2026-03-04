@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class A05_SimpleDateFormat {
-    static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException {
         //定义字符串表示三个时间
         String startStr = "2023年11月11日 0:0:0";
         String endStr = "2023年11月11日 0:10:0";
