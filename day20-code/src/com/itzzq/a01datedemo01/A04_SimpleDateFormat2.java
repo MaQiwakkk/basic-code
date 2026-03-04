@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class A04_SimpleDateFormat2 {
-    static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException {
         //原格式
         String str ="2000-11-11";
 
