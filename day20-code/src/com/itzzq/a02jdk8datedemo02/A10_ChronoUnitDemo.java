@@ -9,8 +9,8 @@ public class A10_ChronoUnitDemo {
         LocalDateTime today = LocalDateTime.now();
         System.out.println(today);
         // 生日时间
-        LocalDateTime birthDate = LocalDateTime.of(2000, 1, 1,
-                0, 0, 0);
+        LocalDateTime birthDate = LocalDateTime.of(2002, 10, 16,
+                2, 0, 0);
         System.out.println(birthDate);
 
         System.out.println("相差的年数:" + ChronoUnit.YEARS.between(birthDate, today));

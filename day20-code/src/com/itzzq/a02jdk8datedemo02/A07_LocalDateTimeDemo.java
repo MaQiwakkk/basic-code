@@ -32,6 +32,6 @@ public class A07_LocalDateTimeDemo {
         LocalTime lt = nowDateTime.toLocalTime();
         System.out.println(lt.getHour());
         System.out.println(lt.getMinute());
-         System.out.println(lt.getSecond());
+        System.out.println(lt.getSecond());
     }
 }

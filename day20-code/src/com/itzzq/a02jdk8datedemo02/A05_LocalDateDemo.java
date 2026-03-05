@@ -34,8 +34,8 @@ public class A05_LocalDateDemo {
         System.out.println("day:" + day);
 
         //获取一年的第几天
-        int dayofYear = ldDate.getDayOfYear();
-        System.out.println("dayOfYear:" + dayofYear);
+        int dayOfYear = ldDate.getDayOfYear();
+        System.out.println("dayOfYear:" + dayOfYear);
 
         //获取星期
         DayOfWeek dayOfWeek = ldDate.getDayOfWeek();

@@ -15,7 +15,7 @@ public class A04_DateTimeForMatterDemo {
         ZonedDateTime time = Instant.now().atZone(ZoneId.of("Asia/Shanghai"));
 
         // 解析/格式化器
-        DateTimeFormatter dtf1=DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm;ss EE a");
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm;ss EE a");
         // 格式化
         System.out.println(dtf1.format(time));
     }
