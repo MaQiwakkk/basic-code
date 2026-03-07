@@ -11,7 +11,7 @@ public class Test4 {
         //JDK7
         //规则:只要对时间进行计算或者判断，都需要先获取当前时间的毫秒值
         //1.计算出生年月日的毫秒值
-        String birthday = "2000年1月1日";
+        String birthday = "2002年10月16日";
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
         Date date = sdf.parse(birthday);
         long birthdayTime = date.getTime();
@@ -23,7 +23,7 @@ public class Test4 {
 
 
         //JDK8
-        LocalDate ld1 = LocalDate.of(2000, 1, 1);
+        LocalDate ld1 = LocalDate.of(2002, 10, 16);
         LocalDate ld2 = LocalDate.now();
         long days = ChronoUnit.DAYS.between(ld1, ld2);
         System.out.println(days);

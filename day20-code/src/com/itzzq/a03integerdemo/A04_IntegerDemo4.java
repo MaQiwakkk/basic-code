@@ -3,8 +3,8 @@ package com.itzzq.a03integerdemo;
 public class A04_IntegerDemo4 {
     public static void main(String[] args) {
         /*
-            public static string tobinarystring(int i) 得到二进制
-            public static string tooctalstring(int i) 得到八进制
+            public static string toBinarystring(int i) 得到二进制
+            public static string toOctalstring(int i) 得到八进制
             public static string toHexstring(int i) 得到十六进制
             public static int parseInt(string s) 将字符串类型的整数转成int类型的整数
         */
@@ -34,7 +34,5 @@ public class A04_IntegerDemo4 {
         String str = "true";
         boolean b = Boolean.parseBoolean(str);
         System.out.println(b);
-
-
     }
 }

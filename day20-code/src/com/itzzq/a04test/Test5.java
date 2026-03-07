@@ -11,9 +11,9 @@ public class Test5 {
         */
 
         //jdk7
-        //我们可以把时间设置为2000年3月1日
+        //我们可以把时间设置为2012年3月1日
         Calendar c = Calendar.getInstance();
-        c.set(2000, 2, 1);
+        c.set(2012, 2, 1);
         //月份的范围:0~11
         //再把日历往前减一天
         c.add(Calendar.DAY_OF_MONTH, -1);
@@ -24,8 +24,8 @@ public class Test5 {
 
         //jdk8
         //月份的范围:1~12
-        //设定时间为2000年的3月1日
-        LocalDate ld = LocalDate.of(2001, 3, 1);
+        //设定时间为2013年的3月1日
+        LocalDate ld = LocalDate.of(2013, 3, 1);
         //把时间往前减一天
         LocalDate ld2 = ld.minusDays(1);
         //获取这一天是一个月中的几号
@@ -35,7 +35,5 @@ public class Test5 {
         //true:闰年
         //false:平年
         System.out.println(ld.isLeapYear());
-
-
     }
 }

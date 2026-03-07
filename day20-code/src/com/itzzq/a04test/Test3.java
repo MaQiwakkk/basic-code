@@ -3,10 +3,8 @@ package com.itzzq.a04test;
 public class Test3 {
     public static void main(String[] args) {
         /*
-
-            定义一个方法自己实现toBinaryString方法的效果，将一个十进制整数转成字符串表示的二进制
-
-         */
+            自己定义一个方法，实现toBinaryString方法的效果，将一个十进制整数转成字符串表示的二进制
+        */
     }
 
 
@@ -15,7 +13,7 @@ public class Test3 {
         //不断的去除以2，得到余数，一直到商为日就结束。
         //还需要把余数倒着拼接起来
 
-        //定义一个StringBuilder用来拼接余数
+        //定义一个StringBuil 来拼接余数
         StringBuilder sb = new StringBuilder();
         //利用循环不断的除以2获取余数
         while (true) {
