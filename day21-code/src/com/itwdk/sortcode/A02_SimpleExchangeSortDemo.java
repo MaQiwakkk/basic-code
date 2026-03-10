@@ -1,12 +1,14 @@
 package com.itwdk.sortcode;
 
-public class A02_SelectionDemo {
+public class A02_SimpleExchangeSortDemo {
     public static void main(String[] args) {
 
         /*
-            选择排序：
+            “选择排序”：
+            严格来说叫简单交换排序（Simple Exchange Sort）
+            不叫选择排序
                 1，从0索引开始，跟后面的元素一一比较。
-                2，小的放前面，大的放后面。
+                2，每遇到更小的数，就马上交换。边比较边交换不是选择排序
                 3，第一次循环结束后，最小的数据已经确定。
                 4，第二次循环从1索引开始以此类推。
 

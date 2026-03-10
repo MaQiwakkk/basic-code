@@ -12,7 +12,7 @@ public class A03_InsertDemo {
         */
         int[] arr = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
 
-        //1.找到无序的哪一组数组是从哪个索引开始的。  2
+        //1.找到无序的那一组数组是从哪个索引开始的。  2
         int startIndex = -1;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] > arr[i + 1]){
@@ -21,7 +21,7 @@ public class A03_InsertDemo {
             }
         }
 
-        //2.遍历从startIndex开始到最后一个元素，依次得到无序的哪一组数据中的每一个元素
+        //2.遍历从startIndex开始到最后一个元素，依次得到无序的那一组数据中的每一个元素
         for (int i = startIndex; i < arr.length; i++) {
             //问题：如何把遍历到的数据，插入到前面有序的这一组当中
 

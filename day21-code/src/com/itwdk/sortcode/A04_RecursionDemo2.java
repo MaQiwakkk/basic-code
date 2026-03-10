@@ -22,13 +22,13 @@ public class A04_RecursionDemo2 {
     }
 
 
-    public static int getSum(int number){//99
-        if(number == 1){
+    public static int getSum(int number) {//99
+        if (number == 1) {
             return 1;
         }
 
         //如果numbert不是1呢？
-        return number + getSum(number -1);
+        return number + getSum(number - 1);
 
     }
 }
