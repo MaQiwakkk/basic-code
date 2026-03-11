@@ -1,14 +1,13 @@
 package com.itwdk.sortcode;
 
-public class A05_QuickSortDemoDraft {
+public class A05_QuickSortDraft {
     public static void main(String[] args) {
         int[] arr = {6, 1, 2, 7, 9, 3, 4, 5, 10, 8};
 
-        // 调用方法，执行快速排序的第一轮:
+        // 调用快速排序方法
         myQuickSort(arr, 0, arr.length - 1);
 
-        // 打印第一轮排序后的结果
-        // 预期结果应该是基准数 6 左边的都比它小，右边的都比它大
+        // 打印结果
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -18,6 +17,12 @@ public class A05_QuickSortDemoDraft {
         // 定义两个变量记录要查找的范围
         int start = i;
         int end = j;
+
+        // 递归出口
+        if (i >= j) {
+            return;
+        }
+
 
         // 记录基准数（默认把范围内的第一个数作为基准数）
         // 最左边为基准数，必须end先走
@@ -49,9 +54,13 @@ public class A05_QuickSortDemoDraft {
 
         // 当start和end指向了同一个元素的时候，那么上面的循环就会结束
         // 表示已经找到了基准数在数组中应存入的位置
-        // 基准数归位：把基准数跟start（或end）指向的位置进行交换,第一轮结束
+        // 基准数归位：把基准数跟start（或end）指向的位置进行交换,本轮结束
         int temp = arr[i];
         arr[i] = arr[start];
         arr[start] = temp;
+
+        // 递归，分别对左右两边的数QuickSort
+        myQuickSort(arr, i, start - 1);
+        myQuickSort(arr, start + 1, j);
     }
 }

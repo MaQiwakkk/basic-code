@@ -16,7 +16,7 @@ public class StudentSystem {
         ArrayList<Student> studentList = new ArrayList<>();
         Student student = new Student("1", "王大可", 23, "友园16");
         Student student1 = new Student("2", "钱粮", 23, "友园16");
-        Student student2 = new Student("3", "石佳段彤", 22, "友园15");
+        Student student2 = new Student("3", "无名氏", 22, "友园18");
         studentList.add(student);
         studentList.add(student1);
         studentList.add(student2);
