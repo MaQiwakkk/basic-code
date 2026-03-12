@@ -2,10 +2,10 @@ package com.itwdk.test.test5;
 
 public class Test5Recursion {
     public static void main(String[] args) {
-        System.out.println(climb(5));
+        System.out.println(climb(5)); // 应该是13
     }
 
-    // 过高阶直接栈溢出卡死，尝试109阶会报错
+    // 过高阶直接栈溢出卡死，尝试109阶，会报错
     public static long climb(int n) {
         if (n == 1) {
             return 1;
