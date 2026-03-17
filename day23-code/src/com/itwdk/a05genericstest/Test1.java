@@ -1,4 +1,4 @@
-package com.itwdk.a05test;
+package com.itwdk.a05genericstest;
 
 import java.util.ArrayList;
 

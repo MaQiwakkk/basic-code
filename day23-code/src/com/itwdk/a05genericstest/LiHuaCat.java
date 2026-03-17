@@ -1,4 +1,4 @@
-package com.itwdk.a05test;
+package com.itwdk.a05genericstest;
 
 public class LiHuaCat extends Cat {
     @Override
