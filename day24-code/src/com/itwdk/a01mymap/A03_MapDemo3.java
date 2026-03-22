@@ -2,7 +2,10 @@ package com.itwdk.a01mymap;
 
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
+import java.util.function.Consumer;
 
 public class A03_MapDemo3 {
     public static void main(String[] args) {
@@ -24,18 +27,48 @@ public class A03_MapDemo3 {
         map.put("人物挂件", "明世隐");
         map.put("御龙骑士", "尹志平");
 
-       /* //3.Map集合的第二种遍历方式
+        //3.Map集合的第二种遍历方式
         //通过键值对对象进行遍历
         //3.1 通过一个方法获取所有的键值对对象，返回一个Set集合
         Set<Map.Entry<String, String>> entries = map.entrySet();
-        //3.2 遍历entries这个集合，去得到里面的每一个键值对对象
+
+        //3.2 方法一增强for遍历entries这个集合，去得到里面的每一个键值对对象
         for (Map.Entry<String, String> entry : entries) {//entry  --->  "御龙骑士","尹志平"
             //3.3 利用entry调用get方法获取键和值
             String key = entry.getKey();
             String value = entry.getValue();
             System.out.println(key + "=" + value);
-        }*/
+        }
 
+        //3.2 方法二迭代器遍历entries这个集合，去得到里面的每一个键值对对象
+        Iterator<Map.Entry<String, String>> it = entries.iterator();
+        while (it.hasNext()) {
+            Map.Entry<String, String> entry = it.next();
+            String key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println(key + "=" + value);
+        }
+
+
+        //3.2 方法三匿名内部类遍历entries这个集合，去得到里面的每一个键值对对象
+        entries.forEach(new Consumer<Map.Entry<String, String>>() {
+            @Override
+            public void accept(Map.Entry<String, String> stringStringEntry) {
+                String key = stringStringEntry.getKey();
+                String value = stringStringEntry.getValue();
+                System.out.println(key + "=" + value);
+            }
+        });
+
+        //3.2 方法三lambda遍历entries这个集合，去得到里面的每一个键值对对象
+        entries.forEach(( entry) -> {
+            String key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println(key + "=" + value);
+        });
+
+
+        /*
         //3.Map集合的第二种遍历方式
         //通过键值对对象进行遍历
         //3.1 通过一个方法获取所有的键值对对象，返回一个Set集合
@@ -45,7 +78,7 @@ public class A03_MapDemo3 {
             String key = entry.getKey();
             String value = entry.getValue();
             System.out.println(key + "=" + value);
-        }
+        }*/
 
     }
 }
