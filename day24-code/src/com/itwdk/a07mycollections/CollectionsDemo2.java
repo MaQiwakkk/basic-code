@@ -53,7 +53,7 @@ public class CollectionsDemo2 {
         ArrayList<Integer> list3 = new ArrayList<>();
         ArrayList<Integer> list4 = new ArrayList<>();
         Collections.addAll(list3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        Collections.addAll(list4, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+        Collections.addAll(list4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Collections.copy(list4, list3);
         System.out.println(list3);
         System.out.println(list4);
@@ -78,7 +78,7 @@ public class CollectionsDemo2 {
         // 默认的规则无法满足，可以自己指定规则
         // 求指定规则的最大值或者最小值
         ArrayList<String> list7 = new ArrayList<>();
-        Collections.addAll(list7, "a","aa","aaa","aaaa");
+        Collections.addAll(list7, "a", "aa", "aaa", "aaaa");
         System.out.println(Collections.max(list7, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
@@ -86,12 +86,11 @@ public class CollectionsDemo2 {
             }
         }));
 
-        System.out.println("-------------swap--------------------------");
+        System.out.println("-------------swap  --------------------------");
         ArrayList<Integer> list8 = new ArrayList<>();
         Collections.addAll(list8, 1, 2, 3);
-        Collections.swap(list8,0,2);
+        Collections.swap(list8, 0, 2);
         System.out.println(list8);
-
 
 
     }

@@ -26,7 +26,7 @@ public class A03_TreeMapDemo3 {
         String s = "aababcabcdabcde";
 
         //2.创建集合
-        TreeMap<Character,Integer> tm = new TreeMap<>();
+        TreeMap<Character, Integer> tm = new TreeMap<>();
 
         //3.遍历字符串得到里面的每一个字符
         for (int i = 0; i < s.length(); i++) {
@@ -34,17 +34,17 @@ public class A03_TreeMapDemo3 {
             //拿着c到集合中判断是否存在
             //存在，表示当前字符又出现了一次
             //不存在，表示当前字符是第一次出现
-            if(tm.containsKey(c)){
+            if (tm.containsKey(c)) {
                 //存在
                 //先把已经出现的次数拿出来
                 int count = tm.get(c);
                 //当前字符又出现了一次
                 count++;
                 //把自增之后的结果再添加到集合当中
-                tm.put(c,count);
-            }else{
+                tm.put(c, count);
+            } else {
                 //不存在
-                tm.put(c,1);
+                tm.put(c, 1);
             }
         }
 
@@ -53,8 +53,9 @@ public class A03_TreeMapDemo3 {
         //StringBuilder sb = new StringBuilder();
         //tm.forEach((key, value)->sb.append(key).append("(").append(value).append(")"));
 
-        StringJoiner sj = new StringJoiner("","","");
-        tm.forEach((key, value)->sj.add(key + "").add("(").add(value + "").add(")"));
+        StringJoiner sj = new StringJoiner("", "", "");
+        //key + ""：把 char 类型的 key 变成 String。 value同理
+        tm.forEach((key, value) -> sj.add(key + "").add("(").add(value + "").add(")"));
 
         System.out.println(sj);
 
