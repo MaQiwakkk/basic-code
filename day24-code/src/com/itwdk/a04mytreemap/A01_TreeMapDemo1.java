@@ -10,7 +10,7 @@ public class A01_TreeMapDemo1 {
             需求1：
                 键：整数表示id
 	            值：字符串表示商品名称
-	            要求1：按照id的升序排列
+	            要求1：按照id的升序排列(默认就是升序)
 
 	            要求2：按照id的降序排列
          */
@@ -29,11 +29,11 @@ public class A01_TreeMapDemo1 {
         });
 
         //2.添加元素
+        tm.put(2,"康帅傅");
         tm.put(5,"可恰可乐");
         tm.put(4,"雷碧");
-        tm.put(3,"九个核桃");
-        tm.put(2,"康帅傅");
         tm.put(1,"粤利粤");
+        tm.put(3,"九个核桃");
 
         //3.打印集合
         System.out.println(tm);

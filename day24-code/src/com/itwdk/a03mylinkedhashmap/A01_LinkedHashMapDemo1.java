@@ -28,9 +28,5 @@ public class A01_LinkedHashMapDemo1 {
         //3.打印集合
         System.out.println(lhm);
 
-
-
-
-
     }
 }
